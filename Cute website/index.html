@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geheime Boodskap Skattejag</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌟 Welkom by die Geheime Boodskap Skattejag! 🌟</h1>
+        <p id="clue">Klik op die hartjie om te begin!</p>
+
+        <div id="clues">
+            <div class="clue-item" id="heart" data-message="Jy's my hele hartjie! Soek die Ster.">
+                <i class="fas fa-heart"></i>
+            </div>
+            <div class="clue-item" id="star" data-message="Jy's die helderste ster in die heelal! Hoof oor die blommetjie.">
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="clue-item" id="flower" data-message=" Jy's die mooiste blommetjie! Nou vir die finale speletjie!">
+                <i class="fas fa-seedling"></i>
+            </div>
+        </div>
+
+        <div id="game-container" style="display:none;">
+            <p id="game-instruction">Vang die rooi sirkel om te wen!</p>
+            <div id="heart-game"></div>
+        </div>
+
+        <div id="final-message" style="display:none;">
+            <h2>Jy het die skat gevind! ❤️</h2>
+            <p>Jy's my alles!</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
